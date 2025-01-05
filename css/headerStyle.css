@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    position: relative;
+}
+.header {
+    width: 100%;
+    position: relative;
+}
+nav {
+    width: 100%;
+    padding: 10px 5px;
+    background: rgba(0, 0, 0, 0.551);
+    position: sticky;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+}
+nav .brand {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 30px;
+    color: azure;
+}
+nav .navigation {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 25px;
+}
+nav .navigation a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    color: azure;
+    box-sizing: border-box;
+}
+nav .navigation a:hover {
+    border-radius: 50%;
+    border-bottom: 1px solid azure;
+}
+nav .navigation span {
+    width: 1px;
+    height: 100%;
+    background: #000;
+}
+
+.section
+{
+    position: relative;
+    width: 100%;
+}
+main {
+    width: 100%;
+    background-color: cornsilk;
+}
+main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 35px;
+    padding: 50px;
+}
+@media (max-width:760px){
+    
+    main .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+main .grid-container div {
+    padding: 12px 15px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    transition: .8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    border: 5px ridge silver;
+}
+main .grid-container div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    color: azure;
+    
+}
+main .grid-container div:hover{
+    border: none;
+    /* background-color: rgba(0,0,0,.5); */
+}
+
+main .grid-container .itTest {
+    background: linear-gradient(to left top, green,green, cornsilk);
+}
+main .grid-container .mathTest {
+    background: linear-gradient(to left top, blue,blue, cornsilk);
+}
+main .grid-container .htmlTest {
+    background: linear-gradient(to left top, orangered,orangered, cornsilk);
+}
+main .grid-container .dasturlashTest {
+    background: linear-gradient(to left top, chocolate, chocolate, cornsilk);
+}
+main .grid-container .jsTest {
+    background: linear-gradient(to left top, yellow, yellow, cornsilk);
+}
+main .grid-container .cssTest {
+    background: linear-gradient(to left top, navy, navy, cornsilk);
+}
+main .grid-container .pyTest {
+    background: linear-gradient(to left top, rgb(1, 69, 1), rgb(1, 69, 1), cornsilk);
+}

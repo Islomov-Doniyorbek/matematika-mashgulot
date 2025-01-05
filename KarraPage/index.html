@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Python Page/css/style.css">
+    <title>Karra jadvali bo'yicha</title>
+</head>
+<body>
+    
+    <div class="home-box custom-box">
+        <h3>Karra jadvali bo'yicha test</h3>
+        <p>Savollar soni: <span class="total-question"></span></p>
+        <button type="button" class="btn" id="start" onclick="startQuiz(), timeOut()">Testni boshlash</button>
+        <button type="button" class="btn"><a href="/index.html">Bosh sahifa</a></button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="timer"><span></span> s</div>
+        <div class="question-number"></div>
+        <div class="question-text"></div>
+        <div class="option-container">
+            
+        </div>
+        <div class="next-question-btn" style="display: none;">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answer-indicator">
+            
+        </div>
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>Test natijasi</h1>
+        <table>
+            <tr>Har bir savol 6.5 ball dan hisoblanadi!</tr>
+            <tr>
+                <td>Savollar soni</td>
+                <td><span class="total-question" style="color: red;"></span></td>
+            </tr>
+            <tr>
+                <td>Izoh</td>
+                <td><span class="total-attemp"></span></td>
+            </tr>
+            <tr>
+                <td>To'g'ri javob</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Noto'g'ri javob</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Natija</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+            <tr>
+                <td>Foiz</td>
+                <td><span class="total-percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Ball</td>
+                <td><span class="total-ball"></span></td>
+            </tr>
+            <tr>
+                <td>Ta'rif</td>
+                <td><span class="total-baho"></span></td>
+            </tr>
+        </table>
+        <!-- <button type="button" class="btn" onclick="tryAgainQuiz()">Yana o'ynaymizmi?!</button> -->
+        <button type="button" class="btn" onclick="goToHome()">Qaytish</button>
+    </div>
+
+
+
+    
+    <script src="/Python Page/js/script.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
