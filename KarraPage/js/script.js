@@ -1,4 +1,4 @@
-let questionLimit = 8;
+let questionLimit = 10;
 let bal = 5
 
 const quiz = [
