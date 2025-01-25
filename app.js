@@ -138,7 +138,7 @@ function next() {
     
 }
 function timeOut() {
-    let k = 61;
+    let k = 91;
     let timeSpan = document.querySelector(".timer span");
     const time = setInterval(() => {
         k--

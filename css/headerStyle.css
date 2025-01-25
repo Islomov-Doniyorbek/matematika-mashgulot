@@ -14,7 +14,7 @@
 nav {
     width: 100%;
     padding: 10px 5px;
-    background: rgba(0, 0, 0, 0.551);
+    background: blue;
     position: sticky;
     display: flex;
     /* justify-content: space-between; */
@@ -63,7 +63,7 @@ main {
 }
 main .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     gap: 35px;
     padding: 50px;
@@ -83,7 +83,7 @@ main .grid-container div {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 250px;
+    height: 130px;
     border: 5px ridge silver;
 }
 main .grid-container div a {
@@ -101,25 +101,6 @@ main .grid-container div:hover{
     border: none;
     /* background-color: rgba(0,0,0,.5); */
 }
-
-main .grid-container .itTest {
-    background: linear-gradient(to left top, green,green, cornsilk);
-}
 main .grid-container .mathTest {
-    background: linear-gradient(to left top, blue,blue, cornsilk);
-}
-main .grid-container .htmlTest {
-    background: linear-gradient(to left top, orangered,orangered, cornsilk);
-}
-main .grid-container .dasturlashTest {
-    background: linear-gradient(to left top, chocolate, chocolate, cornsilk);
-}
-main .grid-container .jsTest {
-    background: linear-gradient(to left top, yellow, yellow, cornsilk);
-}
-main .grid-container .cssTest {
-    background: linear-gradient(to left top, navy, navy, cornsilk);
-}
-main .grid-container .pyTest {
-    background: linear-gradient(to left top, rgb(1, 69, 1), rgb(1, 69, 1), cornsilk);
+    background: linear-gradient(45deg, var(--i), teal);
 }
