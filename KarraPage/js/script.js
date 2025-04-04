@@ -1,5 +1,6 @@
 let questionLimit = 25;
 let bal = 4;
+let k = 120
 
 const quiz = [
     {
@@ -310,7 +311,7 @@ const quiz = [
             '5',
             '2',
         ],
-        answer: 0,
+        answer: 2,
     },
     {
         q: '5x2=?',
